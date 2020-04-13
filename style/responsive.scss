@@ -1,0 +1,358 @@
+@use 'colors';
+@import "mixins";
+
+@media (min-width: 992px) {
+  // Logo
+
+  .logo {
+    @include display(flex, row, center, center);
+    @include margin(6.25rem 0 3.125rem 0);
+  }
+
+  // First Title Paragraph
+
+  .first-title-paragraph {
+    @include display(flex, column, center, center);
+
+    .title {
+      @include display(flex, row, center, center);
+
+      h2 {
+        @include align(center);
+        @include font-weight(600);
+        @include color(colors.$dark-grayish-blue);
+        @include font-size(2.6rem);
+      }
+    }
+
+    .paragraph {
+      @include display(flex, row, center, center);
+
+      p {
+        @include align(center);
+        @include font-size(1.2rem);
+        @include color(colors.$grayish-blue);
+      }
+    }
+  }
+
+  // Download Buttons
+
+  .download-buttons {
+    @include margin(0 0 8.5rem 0);
+    @include display(flex, row, center, center);
+  }
+
+  .ios-button {
+    @include display(flex, row, center, center);
+    @include margin(1.25rem 0 0.938rem 0);
+
+    .ios {
+      @include background-color(colors.$strong-cyan);
+      @include width(100%);
+      @include padding(0.938rem 0);
+      @include border-radius(1.875rem);
+      @include color(colors.$white);
+      @include border(none);
+      @include box-shadow(
+        0 0.188rem 0 0 rgba($color: colors.$stronger-cyan, $alpha: 1.5)
+      );
+      @include font-size(1.2rem);
+    }
+  }
+
+  .mac-button {
+    @include display(flex, row, center, center);
+    @include margin(0);
+
+    .mac {
+      @include background-color(colors.$light-blue);
+      @include width(100%);
+      @include padding(0.938rem 0);
+      @include border-radius(1.875rem);
+      @include color(colors.$white);
+      @include border(none);
+      @include box-shadow(
+        0 0.188rem 0 0 rgba($color: colors.$darker-blue, $alpha: 1.5)
+      );
+      @include font-size(1.2rem);
+    }
+  }
+
+  // Second Title Paragraph
+
+  .second-title-paragraph {
+    @include display(flex, column, center, center);
+
+    .title {
+      @include display(flex, row, center, center);
+
+      h3 {
+        @include align(center);
+        @include font-weight(600);
+        @include color(colors.$dark-grayish-blue);
+        @include font-size(2.2rem);
+      }
+    }
+
+    .paragraph {
+      @include display(flex, row, center, center);
+
+      p {
+        @include align(center);
+        @include font-size(1.1rem);
+        @include color(colors.$grayish-blue);
+      }
+    }
+  }
+
+  // Mac Computer
+
+  .mac-computer {
+    @include margin(3.25rem 0 5rem 0);
+    .mac-pic {
+      @include position(relative);
+      @include right(11rem);
+      img {
+        @include width(100%);
+        @include height(auto);
+      }
+    }
+
+    // Titles
+
+    .titles-right {
+      @include position(relative);
+      @include right(5rem);
+      @include margin(5.25rem 0 0 0);
+      .title {
+        @include display(flex, row, flex-start, center);
+
+        h4 {
+          @include align(center);
+          @include font-weight(600);
+          @include color(colors.$dark-grayish-blue);
+        }
+      }
+
+      .paragraph {
+        @include display(flex, row, flex-start, center);
+        @include margin(0 0 2.5rem 0);
+
+        p {
+          @include align(left);
+          @include font-size(1rem);
+          @include color(colors.$grayish-blue);
+        }
+      }
+    }
+  }
+
+  // Third Title Paragraph
+
+  .third-title-paragraph {
+    @include display(flex, column, center, center);
+
+    .title {
+      @include display(flex, row, center, center);
+
+      h3 {
+        @include align(center);
+        @include font-weight(600);
+        @include color(colors.$dark-grayish-blue);
+        @include font-size(2.2rem);
+      }
+    }
+
+    .paragraph {
+      @include display(flex, row, center, center);
+
+      p {
+        @include align(center);
+        @include font-size(1.1rem);
+        @include color(colors.$grayish-blue);
+      }
+    }
+  }
+
+  // Tablet / Phone
+
+  .tablet-phone {
+    @include display(flex, row, center, center);
+    .tablet-phone-pic {
+      @include margin(3.25rem 0 4.5rem 0);
+      img {
+        @include width(100%);
+        @include height(auto);
+      }
+    }
+  }
+
+  // Fourth Title Paragraph
+
+  .fourth-title-paragraph {
+    @include display(flex, column, center, center);
+
+    .title {
+      @include display(flex, row, center, center);
+
+      h3 {
+        @include align(center);
+        @include font-weight(600);
+        @include color(colors.$dark-grayish-blue);
+        @include font-size(2.2rem);
+      }
+    }
+
+    .paragraph {
+      @include display(flex, row, center, center);
+
+      p {
+        @include align(center);
+        @include font-size(1.1rem);
+        @include color(colors.$grayish-blue);
+      }
+    }
+  }
+
+  // Icons
+
+  .icons {
+    .icon,
+    .title,
+    .paragraph {
+      @include display(flex, row, center, center);
+    }
+
+    .icon {
+      @include margin(0 0 2rem 0);
+    }
+
+    .title {
+      h4 {
+        @include align(center);
+        @include font-weight(600);
+        @include color(colors.$dark-grayish-blue);
+      }
+    }
+
+    .paragraph {
+      @include margin(0 0 2rem 0);
+
+      p {
+        @include align(center);
+        @include font-size(1rem);
+        @include color(colors.$grayish-blue);
+      }
+    }
+  }
+
+  // Company Logos
+
+  .company-icons {
+    @include display(flex, row, space-between, center);
+    @include margin(2rem 0 4.5rem 0);
+
+    .google,
+    .ibm,
+    .microsoft,
+    .hp,
+    .vg {
+      @include display(flex, row, center, center);
+    }
+
+    .vg {
+      @include margin(0);
+    }
+  }
+
+  //Fifth Title
+
+  .fifth-title-paragraph {
+    @include display(flex, column, center, center);
+
+    .title {
+      @include display(flex, row, center, center);
+
+      h3 {
+        @include align(center);
+        @include font-weight(600);
+        @include color(colors.$dark-grayish-blue);
+        @include font-size(2.2rem);
+      }
+    }
+
+    .paragraph {
+      @include display(flex, row, center, center);
+
+      p {
+        @include align(center);
+        @include font-size(1.1rem);
+        @include color(colors.$grayish-blue);
+      }
+    }
+  }
+
+  // Footer
+
+  .footer {
+    @include background-color(colors.$very-light-gray);
+    @include padding(1rem 0);
+    @include position(absolute);
+    @include width(100%);
+    @include left(0);
+    @include margin(0);
+
+    .logo-footer {
+      @include display(flex, row, center, center);
+      @include margin(2.5rem 0);
+
+      img {
+        @include width(30%);
+        @include height(auto);
+      }
+    }
+
+    .link-footer {
+      @include display(flex, column, center, center);
+
+      .link {
+        @include display(flex, row, flex-start, center);
+        @include margin(0.5rem 0);
+      }
+
+      #last-link {
+        @include margin(0 0 3rem 0);
+      }
+    }
+
+    .footer-social-logos {
+      @include margin(1.5rem 0);
+      @include display(flex, column, center, center);
+
+      .twitter {
+        @include display(flex, row, center, center);
+      }
+
+      .facebook {
+        @include display(flex, row, flex-end, center);
+      }
+
+      .instagram {
+        @include display(flex, row, flex-start, center);
+      }
+
+      i {
+        @include font-size(1.3rem);
+        @include color(colors.$dark-grayish-blue);
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .mac-pic {
+    @include position(relative);
+    @include right(12rem!important);
+  }
+}

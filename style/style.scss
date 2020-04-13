@@ -14,11 +14,7 @@ $font: "Bai Jamjuree", sans-serif;
 
 body {
   font-family: $font;
-}
-
-.container {
-  @include background("../images/bg-header-desktop.png", no-repeat);
-  @include padding(0 1.563rem);
+  @include background("../images/bg-header-desktop.png", no-repeat, top center);
 }
 
 // Logo
@@ -30,23 +26,25 @@ body {
 
 // First Title Paragraph
 
-.first-title {
-  @include display(flex, row, center, center);
+.first-title-paragraph {
+  .title {
+    @include display(flex, row, center, center);
 
-  h2 {
-    @include align(center);
-    @include font-weight(600);
-    @include color(colors.$dark-grayish-blue);
+    h2 {
+      @include align(center);
+      @include font-weight(600);
+      @include color(colors.$dark-grayish-blue);
+    }
   }
-}
 
-.first-paragraph {
-  @include display(flex, row, center, center);
+  .paragraph {
+    @include display(flex, row, center, center);
 
-  p {
-    @include align(center);
-    @include font-size(1.1rem);
-    @include color(colors.$grayish-blue);
+    p {
+      @include align(center);
+      @include font-size(1.1rem);
+      @include color(colors.$grayish-blue);
+    }
   }
 }
 
@@ -88,43 +86,11 @@ body {
 
 // Second Title Paragraph
 
-.second-title {
-  @include display(flex, row, center, center);
-
-  h3 {
-    @include align(center);
-    @include font-weight(600);
-    @include color(colors.$dark-grayish-blue);
-  }
-}
-
-.second-paragraph {
-  @include display(flex, row, center, center);
-
-  p {
-    @include align(center);
-    @include font-size(1rem);
-    @include color(colors.$grayish-blue);
-  }
-}
-
-// Mac Computer
-
-.mac-pic {
-  @include margin(3.25rem 0);
-  img {
-    @include width(100%);
-    @include height(auto);
-  }
-}
-
-// Titles
-
-.titles-right {
+.second-title-paragraph {
   .title {
     @include display(flex, row, center, center);
 
-    h4 {
+    h3 {
       @include align(center);
       @include font-weight(600);
       @include color(colors.$dark-grayish-blue);
@@ -133,7 +99,6 @@ body {
 
   .paragraph {
     @include display(flex, row, center, center);
-    @include margin(0 0 1.4rem 0);
 
     p {
       @include align(center);
@@ -143,58 +108,101 @@ body {
   }
 }
 
-// Third Title Paragraph
+// Mac Computer
 
-.third-title {
-  @include display(flex, row, center, center);
-  @include margin(8.5rem 0 0 0);
+.mac-computer {
+  .mac-pic {
+    @include margin(3.25rem 0);
+    img {
+      @include width(100%);
+      @include height(auto);
+    }
+  }
 
-  h3 {
-    @include align(center);
-    @include font-weight(600);
-    @include color(colors.$dark-grayish-blue);
+  // Titles
+
+  .titles-right {
+    @include margin(0 0 7.25rem 0);
+    .title {
+      @include display(flex, row, center, center);
+
+      h4 {
+        @include align(center);
+        @include font-weight(600);
+        @include color(colors.$dark-grayish-blue);
+      }
+    }
+
+    .paragraph {
+      @include display(flex, row, center, center);
+      @include margin(0 0 1.4rem 0);
+
+      p {
+        @include align(center);
+        @include font-size(1rem);
+        @include color(colors.$grayish-blue);
+      }
+    }
   }
 }
 
-.third-paragraph {
-  @include display(flex, row, center, center);
+// Third Title Paragraph
 
-  p {
-    @include align(center);
-    @include font-size(1rem);
-    @include color(colors.$grayish-blue);
+.third-title-paragraph {
+  .title {
+    @include display(flex, row, center, center);
+
+    h3 {
+      @include align(center);
+      @include font-weight(600);
+      @include color(colors.$dark-grayish-blue);
+    }
+  }
+
+  .paragraph {
+    @include display(flex, row, center, center);
+
+    p {
+      @include align(center);
+      @include font-size(1rem);
+      @include color(colors.$grayish-blue);
+    }
   }
 }
 
 // Tablet / Phone
 
-.tablet-phone-pic {
-  @include margin(3.25rem 0 4.5rem 0);
-  img {
-    @include width(100%);
-    @include height(auto);
+.tablet-phone {
+  .tablet-phone-pic {
+    @include margin(3.25rem 0 4.5rem 0);
+    img {
+      @include width(100%);
+      @include height(auto);
+    }
   }
 }
 
 // Fourth Title Paragraph
 
-.fourth-title {
-  @include display(flex, row, center, center);
+.fourth-title-paragraph {
+  .title {
+    @include display(flex, row, center, center);
 
-  h3 {
-    @include align(center);
-    @include font-weight(600);
-    @include color(colors.$dark-grayish-blue);
+    h3 {
+      @include align(center);
+      @include font-weight(600);
+      @include color(colors.$dark-grayish-blue);
+    }
   }
-}
 
-.fourth-paragraph {
-  @include display(flex, row, center, center);
-  @include margin(0 0 4.5rem 0);
-  p {
-    @include align(center);
-    @include font-size(1rem);
-    @include color(colors.$grayish-blue);
+  .paragraph {
+    @include display(flex, row, center, center);
+    @include margin(0 0 4.5rem 0);
+    p {
+      @include align(center);
+      @include font-size(1rem);
+      @include color(colors.$grayish-blue);
+    }
   }
 }
 
@@ -208,6 +216,7 @@ body {
   }
 
   .icon {
+    @include height(2rem);
     @include margin(0 0 2rem 0);
   }
 
@@ -232,46 +241,50 @@ body {
 
 // Company Logos
 
-.google,
-.ibm,
-.microsoft,
-.hp,
-.vg {
-  @include display(flex, row, center, center);
-}
+.company-icons {
+  .google,
+  .ibm,
+  .microsoft,
+  .hp,
+  .vg {
+    @include display(flex, row, center, center);
+  }
 
-.ibm,
-.microsoft,
-.hp {
-  @include margin(2.5rem 0);
-}
+  .ibm,
+  .microsoft,
+  .hp {
+    @include margin(2.5rem 0);
+  }
 
-.google {
-  @include margin(4rem 0 2.5rem 0);
-}
+  .google {
+    @include margin(4rem 0 2.5rem 0);
+  }
 
-.vg {
-  @include margin(2.5rem 0 9rem 0);
+  .vg {
+    @include margin(2.5rem 0 9rem 0);
+  }
 }
 
 //Fifth Title
 
-.fifth-title {
-  @include display(flex, row, center, center);
+.fifth-title-paragraph {
+  .title {
+    @include display(flex, row, center, center);
 
-  h3 {
-    @include align(center);
-    @include font-weight(600);
-    @include color(colors.$dark-grayish-blue);
+    h3 {
+      @include align(center);
+      @include font-weight(600);
+      @include color(colors.$dark-grayish-blue);
+    }
   }
-}
 
-.fifth-paragraph {
-  @include display(flex, row, center, center);
-  p {
-    @include align(center);
-    @include font-size(1rem);
-    @include color(colors.$grayish-blue);
+  .paragraph {
+    @include display(flex, row, center, center);
+    p {
+      @include align(center);
+      @include font-size(1rem);
+      @include color(colors.$grayish-blue);
+    }
   }
 }
 
@@ -279,26 +292,36 @@ body {
 
 .footer {
   @include background-color(colors.$very-light-gray);
+  @include position(absolute);
+  @include width(100%);
+  @include left(0);
+  @include margin(0);
+  .logo-footer {
+    @include display(flex, row, center, center);
+    @include margin(2.5rem 0);
 
-  .footer-links {
-    .logo-footer {
-      @include display(flex, row, center, center);
-      @include margin(2.5rem 0);
-
-      img {
-        @include width(15%);
-        @include height(auto);
-      }
+    img {
+      @include width(15%);
+      @include height(auto);
     }
+  }
 
+  .link-footer {
     .link {
       @include display(flex, row, center, center);
       @include margin(0.5rem 0);
+      @include transition(color 0.3s ease);
+      @include cursor(pointer);
+    }
+
+    .link:hover {
+      @include color(colors.$strong-cyan);
     }
   }
 
   .footer-social-logos {
     @include margin(1.5rem 0);
+
     .twitter {
       @include display(flex, row, center, center);
     }
@@ -310,5 +333,21 @@ body {
     .instagram {
       @include display(flex, row, flex-start, center);
     }
+
+    i {
+      @include font-size(1.3rem);
+      @include transition(color 0.3s ease);
+    }
+
+    i:hover {
+      @include color(colors.$strong-cyan);
+    }
+  }
+}
+
+.attribution {
+  a {
+    @include font-weight(600);
+    @include color(colors.$strong-cyan);
   }
 }

@@ -1,0 +1,376 @@
+@media (min-width: 992px) {
+  .logo {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 6.25rem 0 3.125rem 0;
+  }
+
+  .first-title-paragraph {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-title-paragraph .title {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-title-paragraph .title h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #4c545d;
+    font-size: 2.6rem;
+  }
+  .first-title-paragraph .paragraph {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-title-paragraph .paragraph p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #9fabb2;
+  }
+
+  .download-buttons {
+    margin: 0 0 8.5rem 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ios-button {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem 0 0.938rem 0;
+  }
+  .ios-button .ios {
+    background-color: #26baa4;
+    width: 100%;
+    padding: 0.938rem 0;
+    border-radius: 1.875rem;
+    color: white;
+    border: none;
+    box-shadow: 0 0.188rem 0 0 #1e9482;
+    font-size: 1.2rem;
+  }
+
+  .mac-button {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .mac-button .mac {
+    background-color: #6173ff;
+    width: 100%;
+    padding: 0.938rem 0;
+    border-radius: 1.875rem;
+    color: white;
+    border: none;
+    box-shadow: 0 0.188rem 0 0 #4d61ff;
+    font-size: 1.2rem;
+  }
+
+  .second-title-paragraph {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-title-paragraph .title {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-title-paragraph .title h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #4c545d;
+    font-size: 2.2rem;
+  }
+  .second-title-paragraph .paragraph {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-title-paragraph .paragraph p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #9fabb2;
+  }
+
+  .mac-computer {
+    margin: 3.25rem 0 5rem 0;
+  }
+  .mac-computer .mac-pic {
+    position: relative;
+    right: 11rem;
+  }
+  .mac-computer .mac-pic img {
+    width: 100%;
+    height: auto;
+  }
+  .mac-computer .titles-right {
+    position: relative;
+    right: 5rem;
+    margin: 5.25rem 0 0 0;
+  }
+  .mac-computer .titles-right .title {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .mac-computer .titles-right .title h4 {
+    text-align: center;
+    font-weight: 600;
+    color: #4c545d;
+  }
+  .mac-computer .titles-right .paragraph {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 2.5rem 0;
+  }
+  .mac-computer .titles-right .paragraph p {
+    text-align: left;
+    font-size: 1rem;
+    color: #9fabb2;
+  }
+
+  .third-title-paragraph {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .third-title-paragraph .title {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .third-title-paragraph .title h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #4c545d;
+    font-size: 2.2rem;
+  }
+  .third-title-paragraph .paragraph {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .third-title-paragraph .paragraph p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #9fabb2;
+  }
+
+  .tablet-phone {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .tablet-phone .tablet-phone-pic {
+    margin: 3.25rem 0 4.5rem 0;
+  }
+  .tablet-phone .tablet-phone-pic img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fourth-title-paragraph {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth-title-paragraph .title {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth-title-paragraph .title h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #4c545d;
+    font-size: 2.2rem;
+  }
+  .fourth-title-paragraph .paragraph {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth-title-paragraph .paragraph p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #9fabb2;
+  }
+
+  .icons .icon,
+.icons .title,
+.icons .paragraph {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons .icon {
+    margin: 0 0 2rem 0;
+  }
+  .icons .title h4 {
+    text-align: center;
+    font-weight: 600;
+    color: #4c545d;
+  }
+  .icons .paragraph {
+    margin: 0 0 2rem 0;
+  }
+  .icons .paragraph p {
+    text-align: center;
+    font-size: 1rem;
+    color: #9fabb2;
+  }
+
+  .company-icons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 4.5rem 0;
+  }
+  .company-icons .google,
+.company-icons .ibm,
+.company-icons .microsoft,
+.company-icons .hp,
+.company-icons .vg {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .company-icons .vg {
+    margin: 0;
+  }
+
+  .fifth-title-paragraph {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-title-paragraph .title {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-title-paragraph .title h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #4c545d;
+    font-size: 2.2rem;
+  }
+  .fifth-title-paragraph .paragraph {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-title-paragraph .paragraph p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #9fabb2;
+  }
+
+  .footer {
+    background-color: #f6f7f9;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+  .footer .logo-footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+  }
+  .footer .logo-footer img {
+    width: 30%;
+    height: auto;
+  }
+  .footer .link-footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .link-footer .link {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  .footer .link-footer #last-link {
+    margin: 0 0 3rem 0;
+  }
+  .footer .footer-social-logos {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-social-logos .twitter {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-social-logos .facebook {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer .footer-social-logos .instagram {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer .footer-social-logos i {
+    font-size: 1.3rem;
+    color: #4c545d;
+  }
+}
+@media (min-width: 1440px) {
+  .mac-pic {
+    position: relative;
+    right: 12rem !important;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

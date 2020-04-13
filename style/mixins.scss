@@ -2,9 +2,14 @@
   text-align: $align;
 }
 
-@mixin background($asset, $repeat) {
+@mixin align-self($position) {
+  align-self: $position;
+}
+
+@mixin background($asset, $repeat, $position) {
   background: url($asset);
   background-repeat: $repeat;
+  background-position: $position;
 }
 
 @mixin background-color($color) {
@@ -19,12 +24,20 @@
   border: $border;
 }
 
+@mixin bottom($bottom) {
+  bottom: $bottom;
+}
+
 @mixin box-shadow($shadow) {
   box-shadow: $shadow;
 }
 
 @mixin color($color) {
   color: $color;
+}
+
+@mixin cursor($cursor) {
+  cursor: $cursor;
 }
 
 @mixin display($flex, $flow, $justify, $align) {
@@ -46,12 +59,36 @@
   height: $height;
 }
 
+@mixin left($left) {
+  left: $left;
+}
+
+@mixin justify-self($position) {
+  justify-self: $position;
+}
+
 @mixin margin($m) {
   margin: $m;
 }
 
 @mixin padding($p) {
   padding: $p;
+}
+
+@mixin position($position) {
+  position: $position;
+}
+
+@mixin right($right) {
+  right: $right;
+}
+
+@mixin top($top) {
+  top: $top;
+}
+
+@mixin transition($transition) {
+  transition: $transition;
 }
 
 @mixin width($width) {
