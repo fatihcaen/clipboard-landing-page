@@ -1,0 +1,314 @@
+// Mixins
+@use 'colors';
+@import "mixins";
+
+// Font
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+$font: "Bai Jamjuree", sans-serif;
+
+// Colors
+
+// Main
+
+body {
+  font-family: $font;
+}
+
+.container {
+  @include background("../images/bg-header-desktop.png", no-repeat);
+  @include padding(0 1.563rem);
+}
+
+// Logo
+
+.logo {
+  @include display(flex, row, center, center);
+  @include margin(6.25rem 0 3.125rem 0);
+}
+
+// First Title Paragraph
+
+.first-title {
+  @include display(flex, row, center, center);
+
+  h2 {
+    @include align(center);
+    @include font-weight(600);
+    @include color(colors.$dark-grayish-blue);
+  }
+}
+
+.first-paragraph {
+  @include display(flex, row, center, center);
+
+  p {
+    @include align(center);
+    @include font-size(1.1rem);
+    @include color(colors.$grayish-blue);
+  }
+}
+
+// Download Buttons
+
+.ios-button {
+  @include display(flex, row, center, center);
+  @include margin(1.25rem 0 0.938rem 0);
+
+  .ios {
+    @include background-color(colors.$strong-cyan);
+    @include width(100%);
+    @include padding(0.938rem 0);
+    @include border-radius(1.563rem);
+    @include color(colors.$white);
+    @include border(none);
+    @include box-shadow(
+      0 0.188rem 0 0 rgba($color: colors.$stronger-cyan, $alpha: 1.5)
+    );
+  }
+}
+
+.mac-button {
+  @include display(flex, row, center, center);
+  @include margin(1.25rem 0 8.5rem 0);
+
+  .mac {
+    @include background-color(colors.$light-blue);
+    @include width(100%);
+    @include padding(0.938rem 0);
+    @include border-radius(1.563rem);
+    @include color(colors.$white);
+    @include border(none);
+    @include box-shadow(
+      0 0.188rem 0 0 rgba($color: colors.$darker-blue, $alpha: 1.5)
+    );
+  }
+}
+
+// Second Title Paragraph
+
+.second-title {
+  @include display(flex, row, center, center);
+
+  h3 {
+    @include align(center);
+    @include font-weight(600);
+    @include color(colors.$dark-grayish-blue);
+  }
+}
+
+.second-paragraph {
+  @include display(flex, row, center, center);
+
+  p {
+    @include align(center);
+    @include font-size(1rem);
+    @include color(colors.$grayish-blue);
+  }
+}
+
+// Mac Computer
+
+.mac-pic {
+  @include margin(3.25rem 0);
+  img {
+    @include width(100%);
+    @include height(auto);
+  }
+}
+
+// Titles
+
+.titles-right {
+  .title {
+    @include display(flex, row, center, center);
+
+    h4 {
+      @include align(center);
+      @include font-weight(600);
+      @include color(colors.$dark-grayish-blue);
+    }
+  }
+
+  .paragraph {
+    @include display(flex, row, center, center);
+    @include margin(0 0 1.4rem 0);
+
+    p {
+      @include align(center);
+      @include font-size(1rem);
+      @include color(colors.$grayish-blue);
+    }
+  }
+}
+
+// Third Title Paragraph
+
+.third-title {
+  @include display(flex, row, center, center);
+  @include margin(8.5rem 0 0 0);
+
+  h3 {
+    @include align(center);
+    @include font-weight(600);
+    @include color(colors.$dark-grayish-blue);
+  }
+}
+
+.third-paragraph {
+  @include display(flex, row, center, center);
+
+  p {
+    @include align(center);
+    @include font-size(1rem);
+    @include color(colors.$grayish-blue);
+  }
+}
+
+// Tablet / Phone
+
+.tablet-phone-pic {
+  @include margin(3.25rem 0 4.5rem 0);
+  img {
+    @include width(100%);
+    @include height(auto);
+  }
+}
+
+// Fourth Title Paragraph
+
+.fourth-title {
+  @include display(flex, row, center, center);
+
+  h3 {
+    @include align(center);
+    @include font-weight(600);
+    @include color(colors.$dark-grayish-blue);
+  }
+}
+
+.fourth-paragraph {
+  @include display(flex, row, center, center);
+  @include margin(0 0 4.5rem 0);
+  p {
+    @include align(center);
+    @include font-size(1rem);
+    @include color(colors.$grayish-blue);
+  }
+}
+
+// Icons
+
+.icons {
+  .icon,
+  .title,
+  .paragraph {
+    @include display(flex, row, center, center);
+  }
+
+  .icon {
+    @include margin(0 0 2rem 0);
+  }
+
+  .title {
+    h4 {
+      @include align(center);
+      @include font-weight(600);
+      @include color(colors.$dark-grayish-blue);
+    }
+  }
+
+  .paragraph {
+    @include margin(0 0 2rem 0);
+
+    p {
+      @include align(center);
+      @include font-size(1rem);
+      @include color(colors.$grayish-blue);
+    }
+  }
+}
+
+// Company Logos
+
+.google,
+.ibm,
+.microsoft,
+.hp,
+.vg {
+  @include display(flex, row, center, center);
+}
+
+.ibm,
+.microsoft,
+.hp {
+  @include margin(2.5rem 0);
+}
+
+.google {
+  @include margin(4rem 0 2.5rem 0);
+}
+
+.vg {
+  @include margin(2.5rem 0 9rem 0);
+}
+
+//Fifth Title
+
+.fifth-title {
+  @include display(flex, row, center, center);
+
+  h3 {
+    @include align(center);
+    @include font-weight(600);
+    @include color(colors.$dark-grayish-blue);
+  }
+}
+
+.fifth-paragraph {
+  @include display(flex, row, center, center);
+  p {
+    @include align(center);
+    @include font-size(1rem);
+    @include color(colors.$grayish-blue);
+  }
+}
+
+// Footer
+
+.footer {
+  @include background-color(colors.$very-light-gray);
+
+  .footer-links {
+    .logo-footer {
+      @include display(flex, row, center, center);
+      @include margin(2.5rem 0);
+
+      img {
+        @include width(15%);
+        @include height(auto);
+      }
+    }
+
+    .link {
+      @include display(flex, row, center, center);
+      @include margin(0.5rem 0);
+    }
+  }
+
+  .footer-social-logos {
+    @include margin(1.5rem 0);
+    .twitter {
+      @include display(flex, row, center, center);
+    }
+
+    .facebook {
+      @include display(flex, row, flex-end, center);
+    }
+
+    .instagram {
+      @include display(flex, row, flex-start, center);
+    }
+  }
+}

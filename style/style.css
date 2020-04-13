@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container {
+  background: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  padding: 0 1.563rem;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 6.25rem 0 3.125rem 0;
+}
+
+.first-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.first-title h2 {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.first-paragraph {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.first-paragraph p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #9fabb2;
+}
+
+.ios-button {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem 0 0.938rem 0;
+}
+.ios-button .ios {
+  background-color: #26baa4;
+  width: 100%;
+  padding: 0.938rem 0;
+  border-radius: 1.563rem;
+  color: white;
+  border: none;
+  box-shadow: 0 0.188rem 0 0 #1e9482;
+}
+
+.mac-button {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem 0 8.5rem 0;
+}
+.mac-button .mac {
+  background-color: #6173ff;
+  width: 100%;
+  padding: 0.938rem 0;
+  border-radius: 1.563rem;
+  color: white;
+  border: none;
+  box-shadow: 0 0.188rem 0 0 #4d61ff;
+}
+
+.second-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.second-title h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.second-paragraph {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.second-paragraph p {
+  text-align: center;
+  font-size: 1rem;
+  color: #9fabb2;
+}
+
+.mac-pic {
+  margin: 3.25rem 0;
+}
+.mac-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.titles-right .title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.titles-right .title h4 {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+.titles-right .paragraph {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 1.4rem 0;
+}
+.titles-right .paragraph p {
+  text-align: center;
+  font-size: 1rem;
+  color: #9fabb2;
+}
+
+.third-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 8.5rem 0 0 0;
+}
+.third-title h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.third-paragraph {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.third-paragraph p {
+  text-align: center;
+  font-size: 1rem;
+  color: #9fabb2;
+}
+
+.tablet-phone-pic {
+  margin: 3.25rem 0 4.5rem 0;
+}
+.tablet-phone-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.fourth-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-title h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.fourth-paragraph {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 4.5rem 0;
+}
+.fourth-paragraph p {
+  text-align: center;
+  font-size: 1rem;
+  color: #9fabb2;
+}
+
+.icons .icon,
+.icons .title,
+.icons .paragraph {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.icons .icon {
+  margin: 0 0 2rem 0;
+}
+.icons .title h4 {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+.icons .paragraph {
+  margin: 0 0 2rem 0;
+}
+.icons .paragraph p {
+  text-align: center;
+  font-size: 1rem;
+  color: #9fabb2;
+}
+
+.google,
+.ibm,
+.microsoft,
+.hp,
+.vg {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ibm,
+.microsoft,
+.hp {
+  margin: 2.5rem 0;
+}
+
+.google {
+  margin: 4rem 0 2.5rem 0;
+}
+
+.vg {
+  margin: 2.5rem 0 9rem 0;
+}
+
+.fifth-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.fifth-title h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.fifth-paragraph {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.fifth-paragraph p {
+  text-align: center;
+  font-size: 1rem;
+  color: #9fabb2;
+}
+
+.footer {
+  background-color: #f6f7f9;
+}
+.footer .footer-links .logo-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+.footer .footer-links .logo-footer img {
+  width: 15%;
+  height: auto;
+}
+.footer .footer-links .link {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.footer .footer-social-logos {
+  margin: 1.5rem 0;
+}
+.footer .footer-social-logos .twitter {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-social-logos .facebook {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .footer-social-logos .instagram {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
